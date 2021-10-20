@@ -1,0 +1,35 @@
+.container {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  z-index: 999;
+  width: 50%;
+  background: #5773ff;
+  animation: mymove 0.5s ease-out;
+}
+@keyframes mymove {
+  from {
+    transform: translateX(100%);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+.containerClose {
+  display: none;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+}
+.menuItems li {
+  margin: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}

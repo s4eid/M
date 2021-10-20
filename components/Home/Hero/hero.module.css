@@ -1,0 +1,86 @@
+.mContainer {
+  position: relative;
+  width: 100%;
+  background-color: #f9f8ff;
+  margin-top: 50px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.slideWrapper {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.containerBtn {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+.containerBtn button {
+  width: 100px;
+  color: #f9f8ff;
+  font-weight: bold;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background-color: #101010;
+  transition: 0.2s ease-in;
+}
+.containerBtn button:hover {
+  color: #5773ff;
+}
+.arrows {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.title {
+  width: 50%;
+  margin: auto;
+}
+.text {
+  width: 30%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .text {
+    width: 50%;
+  }
+  .arrows img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .text {
+    font-size: 14px;
+    width: 100%;
+  }
+  .title {
+    font-size: 12px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 11px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .containerBtn button {
+    width: 70px;
+    font-size: 12px;
+    height: 30px;
+  }
+}
