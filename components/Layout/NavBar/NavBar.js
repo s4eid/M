@@ -4,8 +4,10 @@ import { navItems } from "../../../Data/NavItems";
 import Link from "next/link";
 import Image from "next/image";
 import SideBar from "./SideBar";
+import { useRouter } from "next/router";
 export default function NavBar({ children }) {
   const [navOpen, setNavOpen] = useState(false);
+  const router = useRouter();
   return (
     <>
       <div className={nav.container}>
@@ -28,7 +30,12 @@ export default function NavBar({ children }) {
           </ul>
         </div>
         <div className={nav.loginContainer}>
-          <button className={nav.loginBtn}>Giriş</button>
+          <button
+            onClick={() => router.push("/loginTeacher")}
+            className={nav.loginBtn}
+          >
+            Giriş
+          </button>
         </div>
         <div className={nav.menuContainer} onClick={() => setNavOpen(!navOpen)}>
           <Image
