@@ -5,9 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import SideBar from "./SideBar";
 import { useRouter } from "next/router";
+import PopUp from "./PopUp/PopUp";
 export default function NavBar({ children }) {
   const [navOpen, setNavOpen] = useState(false);
   const router = useRouter();
+  const [pOpen, setPOpen] = useState(false);
   return (
     <>
       <div className={nav.container}>
@@ -31,7 +33,8 @@ export default function NavBar({ children }) {
         </div>
         <div className={nav.loginContainer}>
           <button
-            onClick={() => router.push("/loginTeacher")}
+            onClick={() => setPOpen(!pOpen)}
+            // onClick={() => router.push("/loginTeacher")}
             className={nav.loginBtn}
           >
             Giriş
@@ -48,6 +51,7 @@ export default function NavBar({ children }) {
         </div>
         <SideBar navItems={navItems} isOpen={navOpen} />
       </div>
+      <PopUp pOpen={pOpen} setPOpen={setPOpen} />
       {children}
     </>
   );

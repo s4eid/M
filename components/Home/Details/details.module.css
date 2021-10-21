@@ -83,20 +83,8 @@
 }
 
 @media screen and (max-width: 360px) {
-  .container {
-    /* height: 150px; */
-  }
-  .derslerContainer {
-    /* height: 200px; */
-  }
-  .title h1 {
-    font-size: 16px;
-  }
   .titleIcon {
     font-size: 50px;
-  }
-  .derslerContainer h1 {
-    font-size: 16px;
   }
   .derslerContainer button {
     font-size: 10px;

@@ -1,0 +1,53 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.mainContainer {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  left: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 300px;
+  width: 500px;
+}
+.mainContainer h1 {
+  margin: 0;
+  font-size: 25px;
+}
+.mainContainer button {
+  background-color: #5773ff;
+  border: none;
+  color: #f9f8ff;
+  border-radius: 3px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  transition: 0.3s ease-out;
+}
+.mainContainer button:hover {
+  color: #101010;
+}
+.close {
+  position: absolute;
+  margin: 10px;
+  top: 0;
+  font-size: 30px;
+  right: 0;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
