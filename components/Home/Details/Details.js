@@ -37,9 +37,36 @@ export default function Details() {
         <div className={details.derslerContainer}>
           <h1>Dersler</h1>
           <div className={details.derslerBtns}>
-            <button>Kimiya</button>
-            <button>Matematik</button>
-            <button>Fizik</button>
+            <div className={details.derslerChild}>
+              <h1>Kimiya</h1>
+              <p>
+                Size en uygun Matematik öğretmeni bulmak için vaktiniz
+                kısıtlıysa eğitim danışmanımızdan yararlanabilirsiniz. Eğitim
+                danışmanımız sizin aradığınız kriterler en uygun öğretmeni sizin
+                için bulsun ve anında size yönlendirsin
+              </p>
+              <button>Basla</button>
+            </div>
+            <div className={details.derslerChild}>
+              <h1>Matematik</h1>
+              <p>
+                Size en uygun Matematik öğretmeni bulmak için vaktiniz
+                kısıtlıysa eğitim danışmanımızdan yararlanabilirsiniz. Eğitim
+                danışmanımız sizin aradığınız kriterler en uygun öğretmeni sizin
+                için bulsun ve anında size yönlendirsin
+              </p>
+              <button>Basla</button>
+            </div>
+            <div className={details.derslerChild}>
+              <h1>Fizik</h1>
+              <p>
+                Size en uygun Matematik öğretmeni bulmak için vaktiniz
+                kısıtlıysa eğitim danışmanımızdan yararlanabilirsiniz. Eğitim
+                danışmanımız sizin aradığınız kriterler en uygun öğretmeni sizin
+                için bulsun ve anında size yönlendirsin
+              </p>
+              <button>Basla</button>
+            </div>
           </div>
         </div>
       </div>

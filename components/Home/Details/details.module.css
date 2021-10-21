@@ -15,6 +15,7 @@
   justify-content: space-around;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 100px;
   text-align: center;
   align-items: center;
 }
@@ -36,11 +37,19 @@
 .derslerContainer {
   margin-top: 60px;
   width: 100%;
-  height: 300px;
+  /* height: 400px; */
   color: #f9f8ff;
+}
+.derslerChild {
+  width: 33%;
+  padding: 5px;
+  border: 2px solid #101010;
+  margin: 10px;
+  border-radius: 10px;
 }
 .derslerBtns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 40px;
 }
@@ -68,14 +77,17 @@
   .container {
     height: 300px;
   }
+  .derslerChild {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 360px) {
   .container {
-    height: 150px;
+    /* height: 150px; */
   }
   .derslerContainer {
-    height: 200px;
+    /* height: 200px; */
   }
   .title h1 {
     font-size: 16px;
