@@ -23,7 +23,7 @@
   width: 500px;
 }
 .mainContainer h1 {
-  margin: 0;
+  margin: 10px;
   font-size: 25px;
 }
 .mainContainer button {
@@ -52,17 +52,40 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
   .mainContainer {
     width: 80vw;
     height: 30vh;
+  }
+  .close {
+    width: 25px;
+    height: 25px;
   }
   .mainContainer h1 {
     font-size: 20px;
   }
   .mainContainer button {
-    width: 80px;
+    width: 75px;
+    height: 40px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainContainer {
+    width: 80vw;
+    height: 30vh;
+  }
+  .close {
+    width: 20px;
+    height: 20px;
+  }
+  .mainContainer h1 {
+    font-size: 18px;
+  }
+  .mainContainer button {
+    width: 70px;
     height: 35px;
-    font-size: 13px;
+    font-size: 11px;
   }
 }
