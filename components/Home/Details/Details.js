@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import details from "./details.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGraduationCap,
+  faSquareRootAlt,
+  faAtom,
+  faFlask,
+} from "@fortawesome/free-solid-svg-icons";
 export default function Details() {
   const [count, setCount] = useState(0);
   let interval;
@@ -35,10 +39,15 @@ export default function Details() {
           <h1>{count}</h1>
         </div>
         <div className={details.derslerContainer}>
-          <h1>Dersler</h1>
+          <div className={details.dersTitle}>
+            <div className={details.line}></div>
+            <h1 className={details.titleD}>Dersler</h1>
+            <div className={details.line}></div>
+          </div>
           <div className={details.derslerBtns}>
             <div className={details.derslerChild}>
               <h1>Kimiya</h1>
+              <FontAwesomeIcon icon={faFlask} />
               <p>
                 Size en uygun Matematik öğretmeni bulmak için vaktiniz
                 kısıtlıysa eğitim danışmanımızdan yararlanabilirsiniz. Eğitim
@@ -49,6 +58,7 @@ export default function Details() {
             </div>
             <div className={details.derslerChild}>
               <h1>Matematik</h1>
+              <FontAwesomeIcon icon={faSquareRootAlt} />
               <p>
                 Size en uygun Matematik öğretmeni bulmak için vaktiniz
                 kısıtlıysa eğitim danışmanımızdan yararlanabilirsiniz. Eğitim
@@ -59,6 +69,7 @@ export default function Details() {
             </div>
             <div className={details.derslerChild}>
               <h1>Fizik</h1>
+              <FontAwesomeIcon icon={faAtom} />
               <p>
                 Size en uygun Matematik öğretmeni bulmak için vaktiniz
                 kısıtlıysa eğitim danışmanımızdan yararlanabilirsiniz. Eğitim

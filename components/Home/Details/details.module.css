@@ -37,13 +37,27 @@
 .derslerContainer {
   margin-top: 60px;
   width: 100%;
-  /* height: 400px; */
   color: #f9f8ff;
+}
+.dersTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.titleD {
+  width: 33%;
+}
+.line {
+  background-color: #101010;
+  height: 3px;
+  width: 33%;
 }
 .derslerChild {
   width: 33%;
   padding: 5px;
-  /* border: 2px solid #101010; */
+  /* background-image: url("/mathbg.jpg"); */
+  /* color: #101010; */
   margin: 10px;
   border-radius: 10px;
 }
