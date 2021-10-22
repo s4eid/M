@@ -31,7 +31,11 @@ export default function Details() {
       <div className={details.container}></div>
       <div className={details.child}>
         <div className={details.title}>
-          <h1>Oğrenciler Siyisi</h1>
+          <div className={details.dersTitle}>
+            <div className={details.line}></div>
+            <h1>Oğrenciler Siyisi</h1>
+            <div className={details.line}></div>
+          </div>
           <FontAwesomeIcon
             icon={faGraduationCap}
             className={details.titleIcon}

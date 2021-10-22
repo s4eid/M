@@ -4,10 +4,16 @@
   right: 0;
   z-index: 999;
   width: 50%;
-  background: #5773ff;
-  animation: mymove 0.5s ease-out;
+  color: white;
+  background: rgba(16, 16, 16, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* background-color: #5773ff; */
+  /* animation: mymove 0.5s ease-out; */
 }
-@keyframes mymove {
+/* @keyframes mymove {
   from {
     transform: translateX(100%);
     opacity: 0%;
@@ -16,7 +22,7 @@
     transform: translateX(0%);
     opacity: 100%;
   }
-}
+} */
 .containerClose {
   display: none;
 }

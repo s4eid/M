@@ -20,16 +20,14 @@
   align-items: center;
 }
 .title {
-  border: 1px solid #101010;
   color: #f9f8ff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
   align-items: center;
   justify-content: space-around;
   height: 50%;
-  border: 2px solid black;
 }
 .titleIcon {
   font-size: 70px;
@@ -98,7 +96,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    height: 300px;
+    height: 250px;
   }
   .derslerChild {
     width: 100%;

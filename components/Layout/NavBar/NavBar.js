@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import nav from "./nav.module.css";
 import { navItems } from "../../../Data/NavItems";
 import Link from "next/link";
@@ -10,9 +10,20 @@ export default function NavBar({ children }) {
   const [navOpen, setNavOpen] = useState(false);
   const router = useRouter();
   const [pOpen, setPOpen] = useState(false);
+  const [navChange, setNavChange] = useState(false);
+  const scrolling = () => {
+    if (window.scrollY >= 80) {
+      setNavChange(true);
+    } else {
+      setNavChange(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", scrolling);
+  }, []);
   return (
     <>
-      <div className={nav.container}>
+      <div className={!navChange ? nav.container : nav.container_active}>
         <div className={nav.logoContainer}>
           <Image
             className={nav.logo}
