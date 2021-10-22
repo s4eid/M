@@ -45,6 +45,10 @@
   top: 0;
   font-size: 30px;
   right: 0;
+  transition: color 0.3s ease-in;
+}
+.close:hover {
+  color: red;
 }
 .btnContainer {
   display: flex;
