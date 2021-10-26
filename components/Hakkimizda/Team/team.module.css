@@ -46,6 +46,11 @@
   color: #fefedf;
   font-size: 22px;
 }
+.persons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 @media screen and (max-width: 768px) {
   .mainContainer {
@@ -53,5 +58,11 @@
   }
   .titleContainer h1 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .persons {
+    flex-direction: column;
   }
 }

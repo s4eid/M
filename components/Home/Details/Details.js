@@ -58,7 +58,6 @@ export default function Details() {
                 danışmanımız sizin aradığınız kriterler en uygun öğretmeni sizin
                 için bulsun ve anında size yönlendirsin
               </p>
-              <button>Basla</button>
             </div>
             <div className={details.derslerChild}>
               <h1>Matematik</h1>
@@ -69,7 +68,6 @@ export default function Details() {
                 danışmanımız sizin aradığınız kriterler en uygun öğretmeni sizin
                 için bulsun ve anında size yönlendirsin
               </p>
-              <button>Basla</button>
             </div>
             <div className={details.derslerChild}>
               <h1>Fizik</h1>
@@ -80,7 +78,6 @@ export default function Details() {
                 danışmanımız sizin aradığınız kriterler en uygun öğretmeni sizin
                 için bulsun ve anında size yönlendirsin
               </p>
-              <button>Basla</button>
             </div>
           </div>
         </div>

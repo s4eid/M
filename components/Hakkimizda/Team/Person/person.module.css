@@ -1,0 +1,20 @@
+.container {
+  min-width: 20%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #5773ff; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+  box-shadow: rgba(62, 101, 255, 0.35) 0px 5px 15px;
+  padding: 40px;
+  border-radius: 5px;
+}
+.container h1 {
+  font-size: 18px;
+  margin: 0;
+}
+.container img {
+  border-radius: 100px;
+}
