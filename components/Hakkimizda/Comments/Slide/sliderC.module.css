@@ -21,6 +21,7 @@
 .child {
   width: 50%;
   padding: 20px;
+  /* background-color: #5773ff; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +39,8 @@
   font-size: 20px;
 }
 .child p {
-  color: gray;
+  color: white;
+  opacity: 80%;
 }
 .icon {
   font-size: 60px;

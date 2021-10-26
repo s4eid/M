@@ -33,10 +33,13 @@
 }
 .child img {
   border-radius: 100px;
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
 }
 .child p {
+  color: #fefedf;
+}
+.child h1 {
   color: #fefedf;
 }
 .icon {
@@ -69,6 +72,10 @@
   }
   .child p {
     font-size: 11px;
+  }
+  .child img {
+    width: 130px;
+    height: 130px;
   }
   .icon {
     font-size: 50px;

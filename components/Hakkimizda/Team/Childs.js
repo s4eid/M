@@ -58,7 +58,7 @@ export default function Childs({ person, direction, page, paginate }) {
       }}
     >
       <div className={sliderC.child}>
-        <FontAwesomeIcon icon={faUser} className={sliderC.icon} />
+        <Image src={person.image} layout="intrinsic" width={128} height={128} />
         <p>{person.job}</p>
         <h1>{person.name}</h1>
       </div>
