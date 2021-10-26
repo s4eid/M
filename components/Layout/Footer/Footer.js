@@ -16,7 +16,9 @@ export default function Footer({ children }) {
         <div className={footer.container}>
           <div className={footer.copyRight}>
             <Image
+              loading="lazy"
               src="/NuzemF.svg"
+              alt="logo"
               layout="intrinsic"
               width={100}
               height={100}

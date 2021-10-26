@@ -6,7 +6,7 @@ export const navItems = [
   },
   {
     name: "Hakkimizda",
-    link: "/biz",
+    link: "/hakkimizda",
     id: "2",
   },
   {

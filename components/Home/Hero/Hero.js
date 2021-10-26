@@ -35,11 +35,13 @@ export default function Hero() {
                     onClick={nextSlide}
                     src="/Arrow.svg"
                     alt="arrow"
+                    loading="eager"
                     layout="intrinsic"
                     width={50}
                     height={50}
                   />
                   <Image
+                    loading="eager"
                     onClick={prevSlide}
                     src="/Arrow1.svg"
                     alt="arrow"

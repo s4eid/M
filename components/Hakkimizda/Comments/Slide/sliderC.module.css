@@ -1,0 +1,80 @@
+.mainContainer {
+  margin-top: 30px;
+  /* background-color: black; */
+  /* height: 300px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 40px;
+  overflow-x: hidden;
+}
+
+.childs {
+  margin-top: 40px;
+  /* background-color: black; */
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.child {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+}
+.child img {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+.child h1 {
+  font-size: 20px;
+}
+.child p {
+  color: gray;
+}
+.icon {
+  font-size: 60px;
+}
+.iconR {
+  position: absolute;
+  right: 0;
+  font-size: 40px;
+  margin-right: 20%;
+  color: #5772ff;
+  z-index: 1;
+  top: 50;
+}
+.iconL {
+  position: absolute;
+  z-index: 1;
+  font-size: 40px;
+  color: #5772ff;
+  margin-left: 20%;
+  left: 0;
+  top: 50;
+}
+
+@media screen and (max-width: 768px) {
+  .child {
+    width: 80%;
+  }
+  .child h1 {
+    font-size: 18px;
+  }
+  .iconR {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  .iconL {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+}

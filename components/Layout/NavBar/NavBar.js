@@ -25,13 +25,17 @@ export default function NavBar({ children }) {
     <>
       <div className={!navChange ? nav.container : nav.container_active}>
         <div className={nav.logoContainer}>
-          <Image
-            className={nav.logo}
-            src="/Nuzem.svg"
-            layout="intrinsic"
-            width={100}
-            height={100}
-          />
+          <Link href="/">
+            <Image
+              alt="logo"
+              loading="eager"
+              className={nav.logo}
+              src="/Nuzem.svg"
+              layout="intrinsic"
+              width={100}
+              height={100}
+            />
+          </Link>
         </div>
         <div className={nav.linksContainer}>
           <ul>
@@ -54,8 +58,10 @@ export default function NavBar({ children }) {
         <div className={nav.menuContainer} onClick={() => setNavOpen(!navOpen)}>
           <Image
             className={!navOpen ? nav.burger : nav.burgerOpen}
-            src="/hamburgerMenu.svg"
+            src="/burger.svg"
+            layout="hamburgerMenu"
             height={28}
+            loading="eager"
             layout="intrinsic"
             width={28}
           />

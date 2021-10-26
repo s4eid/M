@@ -16,6 +16,8 @@ export default function FormContainer() {
     <div className={loginTeacher.container}>
       <div className={loginTeacher.logo}>
         <Image
+          loading="eager"
+          alt="logo"
           src="/Nuzem.svg"
           layout="intrinsic"
           width={100}
