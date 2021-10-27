@@ -20,8 +20,8 @@ export default function FormContainer() {
           alt="logo"
           src="/Nuzem.svg"
           layout="intrinsic"
-          width={100}
-          height={100}
+          width={50}
+          height={50}
           onClick={() => route.push("/")}
         />
       </div>

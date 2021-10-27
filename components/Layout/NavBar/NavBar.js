@@ -32,8 +32,8 @@ export default function NavBar({ children }) {
               className={nav.logo}
               src="/Nuzem.svg"
               layout="intrinsic"
-              width={100}
-              height={100}
+              width={50}
+              height={50}
             />
           </Link>
         </div>

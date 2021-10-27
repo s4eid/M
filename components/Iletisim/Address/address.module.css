@@ -1,0 +1,32 @@
+.mainContainer {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+.line {
+  background-color: #101010;
+  height: 3px;
+  width: 33%;
+}
+.titleContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mapTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.icon {
+  font-size: 40px;
+}
+.mapContainer {
+  width: 100%;
+  margin: auto;
+  border: 5px solid #101010;
+  border-radius: 5px;
+  height: 300px;
+  /* padding: 10px; */
+}

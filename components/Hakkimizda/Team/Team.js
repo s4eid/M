@@ -15,8 +15,8 @@ export default function Team() {
         <div className={team.line}></div>
       </div>
       <div className={team.persons}>
-        {persons.map((p) => (
-          <Persons person={p} />
+        {persons.map((p, index) => (
+          <Persons person={p} key={index} />
         ))}
       </div>
       {/* <Slider /> */}

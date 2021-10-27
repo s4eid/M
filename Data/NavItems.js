@@ -11,7 +11,7 @@ export const navItems = [
   },
   {
     name: "İletişim",
-    link: "/iletişim",
+    link: "/iletisim",
     id: "3",
   },
 ];
