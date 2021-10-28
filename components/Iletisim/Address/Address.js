@@ -14,7 +14,7 @@ export default function Address() {
         </div>
         <div className={address.line}></div>
       </div>
-      <p>esentepe map yildiz sok no:7 kat:2</p>
+      <p>Nevsehir merkez yildiz sok no:7 kat:2</p>
       <div className={address.mapContainer}>
         <GoogleMapReact
           bootstrapURLKeys={{

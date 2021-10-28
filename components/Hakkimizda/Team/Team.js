@@ -1,10 +1,7 @@
 import React from "react";
 import team from "./team.module.css";
-import "swiper/css";
 import { persons } from "../../../Data/SliderPersons";
 import Persons from "./Person/Persons";
-import Slider from "./Slider";
-// import Swiper,{ A11y, Scrollbar, Pagination, Navigation } from "swiper";
 
 export default function Team() {
   return (
@@ -19,7 +16,6 @@ export default function Team() {
           <Persons person={p} key={index} />
         ))}
       </div>
-      {/* <Slider /> */}
     </div>
   );
 }

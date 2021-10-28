@@ -42,6 +42,7 @@ export default function FormContainer() {
               type="text"
               name="email"
               placeholder="Email"
+              autoComplete="off"
               className={loginTeacher.field}
             />
             {errors.email && touched.email ? (

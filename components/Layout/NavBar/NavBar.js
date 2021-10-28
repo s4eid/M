@@ -59,7 +59,7 @@ export default function NavBar({ children }) {
           <Image
             className={!navOpen ? nav.burger : nav.burgerOpen}
             src="/burger.svg"
-            layout="hamburgerMenu"
+            alt="burgerMenu"
             height={28}
             loading="eager"
             layout="intrinsic"
