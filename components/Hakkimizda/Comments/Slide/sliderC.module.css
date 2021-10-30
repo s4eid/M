@@ -51,11 +51,13 @@
   font-size: 40px;
   margin-right: 20%;
   color: #5772ff;
+  cursor: pointer;
   z-index: 1;
   top: 50;
 }
 .iconL {
   position: absolute;
+  cursor: pointer;
   z-index: 1;
   font-size: 40px;
   color: #5772ff;
