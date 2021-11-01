@@ -1,0 +1,83 @@
+.postMainContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.post {
+  padding: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 2px solid #101010;
+  background-color: #fefedf;
+  width: 50%;
+}
+.personContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.name {
+  font-weight: bold;
+  opacity: 70%;
+}
+
+.personContainer p {
+  margin: 16px;
+}
+.profile {
+  border: 2px solid black;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 50px;
+  background-color: #101010;
+  color: #fefedf;
+  height: 50px;
+  border-radius: 100%;
+  margin: 2px;
+}
+.profile p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.titleContainer {
+  text-align: center;
+  word-wrap: break-word;
+  color: #101010;
+}
+.likeCommentsMainContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.likeCommentsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.likeCommentsContainer p {
+  margin: 5px;
+}
+.icon {
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .postMainContainer {
+    margin-bottom: 100px;
+  }
+  .post {
+    width: 100%;
+  }
+}
