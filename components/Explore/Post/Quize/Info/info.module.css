@@ -1,0 +1,49 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.profileContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.name {
+  margin: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.profile {
+  border: 2px solid black;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 50px;
+  background-color: #101010;
+  color: #fefedf;
+  height: 50px;
+  border-radius: 100%;
+  margin: 2px;
+}
+.profile p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.quizeLength {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5772ff;
+}
+
+@media screen and (max-width: 700px) {
+  .name {
+    font-size: 18px;
+  }
+  .profile p {
+    font-size: 18px;
+  }
+  .quizeLength {
+    font-size: 18px;
+  }
+}

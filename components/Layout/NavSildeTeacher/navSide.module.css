@@ -7,28 +7,30 @@
   border-top: 2px solid black;
   border-radius: 0px 10px 10px 0px;
   background-color: #5773ff;
+  /* background-color: #fefedf; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   width: 200px;
-  height: 100vh;
+  height: 89vh;
 }
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 80%;
+  color: #101010;
+  height: 100%;
   flex-direction: column;
 }
 .profile {
-  border: 2px solid black;
+  border: 2px solid #101011;
   display: flex;
   text-align: center;
   justify-content: space-around;
   align-items: center;
   width: 50px;
   background-color: #fefedf;
-  color: black;
+  color: #101010;
   height: 50px;
   border-radius: 100%;
 }
@@ -52,6 +54,8 @@
 }
 .linksContainer {
   display: flex;
+  text-align: center;
+  width: 100%;
   height: 80%;
   align-items: center;
   font-weight: bold;
@@ -70,9 +74,9 @@
 }
 
 .links {
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
   cursor: pointer;
 }
 @media screen and (max-width: 900px) {
@@ -112,5 +116,11 @@
     width: 100%;
     height: 100%;
     flex-direction: row;
+  }
+}
+@media screen and (max-height: 800px) {
+  .links {
+    display: flex;
+    justify-content: space-around;
   }
 }

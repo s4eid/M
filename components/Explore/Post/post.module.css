@@ -1,4 +1,6 @@
 .mainContainer {
+  padding-top: 40px;
+  background-color: #fefadd;
   margin-left: 200px;
   /* width: calc(100vw - 250px); */
 }
