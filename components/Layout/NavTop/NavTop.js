@@ -9,7 +9,13 @@ export default function NavTop({ children }) {
   return (
     <>
       <div className={navTop.mainContainer}>
-        <Image src="/NWhite.svg" layout="intrinsic" width={40} height={40} />
+        <Image
+          src="/NWhite.svg"
+          layout="intrinsic"
+          className={navTop.logo}
+          width={40}
+          height={40}
+        />
         <h1>{path}</h1>
         <button className={navTop.navBtn}>Çik</button>
       </div>

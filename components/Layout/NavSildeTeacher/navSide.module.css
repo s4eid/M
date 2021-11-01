@@ -97,6 +97,9 @@
     bottom: 0;
     flex-direction: row;
   }
+  .icon {
+    font-size: 22px;
+  }
   .logo {
     display: none;
   }

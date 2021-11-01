@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Posts() {
   return (
     <div className={posts.postMainContainer}>
-      {postData.map((p) => (
-        <div className={posts.post}>
+      {postData.map((p, index) => (
+        <div className={posts.post} key={index}>
           <div className={posts.personContainer}>
             <div className={posts.profile}>
               <p>{p.name.charAt(0)}</p>
