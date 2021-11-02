@@ -1,0 +1,26 @@
+.mainContainer {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.out {
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+}
+.doneBtn {
+  width: 100px;
+  color: #f9f8ff;
+  font-weight: bold;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background-color: #101010;
+  transition: 0.2s ease-in;
+}
+
+.doneBtn:hover {
+  color: #5773ff;
+}

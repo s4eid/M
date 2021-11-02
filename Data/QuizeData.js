@@ -32,7 +32,8 @@ export const quizeData = [
     answer_1: "6",
     answer_2: "7",
     answer_3: "9",
-    answer_4: "1",
+    answer_4:
+      "1hfkljahdsfadlksjflkdjashfkljhdasflkhjdgaskjfhgdaskfjhgdaskjhfgasdkjhfgkjasdhgfjkhadsgfkjhasdgfkjhsdagkjfhasdgkjfhgasdkjhfgasdjhfgasdkjhfgsd",
     image: "/qMath.png",
   },
 ];
