@@ -74,9 +74,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .mainContainer {
-    margin-bottom: 100px;
-  }
   .question {
     width: 100%;
     border-top: 2px solid #101010;
@@ -84,5 +81,18 @@
     border-left: 0;
     border-right: 0;
     border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .qQuestion p {
+    font-size: 17px;
+  }
+  .answersContainer p {
+    font-size: 17px;
+  }
+  .labelContainer {
+    font-size: 17px;
+    padding: 10px;
   }
 }

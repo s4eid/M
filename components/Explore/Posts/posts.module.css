@@ -106,3 +106,21 @@
     border-radius: 0;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .titleContainer p {
+    font-size: 15px;
+  }
+  .personContainer p {
+    font-size: 17px;
+  }
+  .profile p {
+    font-size: 17px;
+  }
+  .likeCommentsContainer p {
+    font-size: 17px;
+  }
+  .icon {
+    font-size: 17px;
+  }
+}

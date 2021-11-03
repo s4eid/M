@@ -35,7 +35,17 @@
   font-weight: bold;
   color: #5772ff;
 }
-
+@media screen and (max-width: 550px) {
+  .name {
+    font-size: 17px;
+  }
+  .quizeLength {
+    font-size: 17px;
+  }
+  .profile p {
+    font-size: 17px;
+  }
+}
 @media screen and (max-width: 700px) {
   .name {
     font-size: 18px;

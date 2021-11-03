@@ -1,5 +1,7 @@
 import React from "react";
 import done from "./done.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 export default function Done() {
   return (
     <div className={done.mainContainer}>
@@ -11,7 +13,7 @@ export default function Done() {
         <button className={done.doneBtn}>Quizedan Çik</button>
       </div>
       <div className={done.goUp}>
-        <p>goUP</p>
+        <FontAwesomeIcon icon={faArrowUp} />
       </div>
     </div>
   );
