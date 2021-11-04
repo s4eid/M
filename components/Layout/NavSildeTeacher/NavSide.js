@@ -1,6 +1,5 @@
 import React from "react";
 import navSide from "./navSide.module.css";
-import { navSideData } from "../../../Data/SideNavItem";
 import { faScroll, faSignal, faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -15,7 +14,7 @@ export default function NavSide({ children }) {
             </div>
           </div>
           <ul className={navSide.linksContainer}>
-            <Link href="/">
+            <Link href="/explore">
               <li className={navSide.links}>
                 <FontAwesomeIcon icon={faHome} />
                 <p>Anasayfa</p>
@@ -23,13 +22,13 @@ export default function NavSide({ children }) {
             </Link>
             <li className={navSide.linksSoru}>
               <FontAwesomeIcon icon={faScroll} />
-              <p>Sorular</p>
+              <p>Test</p>
               <ul className={navSide.subMenu}>
-                <Link href="/sorular/quizelar">
-                  <li>Quzelar</li>
+                <Link href="/test/testlarim">
+                  <li>Testlarim</li>
                 </Link>
-                <Link href="/sorular/quizeEkle">
-                  <li>QuizeEkle</li>
+                <Link href="/test/testEkle">
+                  <li>Test Ekle</li>
                 </Link>
               </ul>
             </li>
@@ -41,9 +40,6 @@ export default function NavSide({ children }) {
             </Link>
           </ul>
         </div>
-        {/* <div className={navSide.bottomCopy}>
-          <p>copyRIght</p>
-        </div> */}
       </div>
       {children}
     </>

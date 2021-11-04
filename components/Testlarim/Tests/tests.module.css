@@ -1,0 +1,115 @@
+.mainContainer {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.child {
+  padding: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 2px solid #101010;
+  background-color: #fefedf;
+  width: 50%;
+  box-shadow: rgba(62, 101, 255, 0.35) 0px 5px 15px;
+}
+.child p {
+  font-size: 18px;
+}
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.title {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.trash {
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+.likeAndComment {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.testBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 30px;
+}
+.testBtn button {
+  width: 120px;
+  cursor: pointer;
+  color: #f9f8ff;
+  font-weight: bold;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background-color: #101010;
+  transition: 0.2s ease-in;
+}
+
+.testBtn button:hover {
+  color: #5773ff;
+}
+
+@media screen and (max-width: 1100px) {
+  .child {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .child {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mainContainer {
+    padding-bottom: 100px;
+  }
+  .child {
+    width: 100%;
+    border-top: 2px solid #101010;
+    border-bottom: 2px solid #101010;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .title p {
+    font-size: 17px;
+  }
+  .likeAndComment p {
+    font-size: 17px;
+  }
+  .testBtn button {
+    width: 100px;
+    font-size: 11px;
+    height: 30px;
+  }
+  .trash {
+    font-size: 17px;
+  }
+  .icon {
+    font-size: 17px;
+  }
+}

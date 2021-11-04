@@ -5,7 +5,7 @@
   border-bottom: 2px solid black;
   border-right: 2px solid black;
   border-top: 2px solid black;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 0px 10px 0px;
   background-color: #5773ff;
   /* background-color: #fefedf; */
   display: flex;
@@ -55,9 +55,9 @@
 .linksContainer {
   display: flex;
   text-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  align-items: center;
   font-weight: bold;
   font-size: 20px;
   list-style: none;
@@ -131,6 +131,10 @@
 }
 .subMenu li {
   margin: 10px;
+  transition: 0.2s ease-in-out;
+}
+.subMenu li:hover {
+  color: white;
 }
 @media screen and (max-width: 900px) {
   .mainContainer {
@@ -184,6 +188,10 @@
   }
 }
 @media screen and (max-width: 380px) {
+  .subMenu {
+    bottom: 50px;
+    left: 0;
+  }
   .mainContainer {
     height: 50px;
   }
