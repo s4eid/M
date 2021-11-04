@@ -56,7 +56,7 @@
   display: flex;
   text-align: center;
   width: 100%;
-  height: 80%;
+  height: 100%;
   align-items: center;
   font-weight: bold;
   font-size: 20px;
@@ -74,17 +74,77 @@
 }
 
 .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   font-size: 20px;
   text-align: center;
   width: 100%;
+  height: 20%;
   cursor: pointer;
+}
+.links p {
+  transition: 0.2s ease-in-out color;
+}
+.links p:hover {
+  color: white;
+}
+.linksSoru {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  height: 20%;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.linksSoru p {
+  transition: 0.2s ease-in-out color;
+}
+.linksSoru p:hover {
+  color: white;
+}
+.linksSoru:hover ul {
+  /* display: block; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.linksSoru ul {
+  display: none;
+}
+.subMenu {
+  position: absolute;
+  left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  border-radius: 5px;
+  background-color: #5773ff;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.subMenu li {
+  margin: 10px;
 }
 @media screen and (max-width: 900px) {
   .mainContainer {
     width: 100px;
   }
-  .mainContainer li {
+  .linksContainer p {
     display: none;
+  }
+  .subMenu {
+    left: 100px;
+    font-size: 17px;
+  }
+  .subMenu li {
+    margin: 20px;
   }
   .icon {
     font-size: 30px;
@@ -101,6 +161,11 @@
     bottom: 0;
     flex-direction: row;
   }
+  .subMenu {
+    bottom: 70px;
+    left: 0;
+    border-radius: 0;
+  }
   .icon {
     font-size: 22px;
   }
@@ -116,12 +181,6 @@
     width: 100%;
     height: 100%;
     flex-direction: row;
-  }
-}
-@media screen and (max-height: 800px) {
-  .links {
-    display: flex;
-    justify-content: space-around;
   }
 }
 @media screen and (max-width: 380px) {

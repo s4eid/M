@@ -1,6 +1,7 @@
 import React from "react";
 import navSide from "./navSide.module.css";
 import { navSideData } from "../../../Data/SideNavItem";
+import { faScroll, faSignal, faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 export default function NavSide({ children }) {
@@ -14,16 +15,30 @@ export default function NavSide({ children }) {
             </div>
           </div>
           <ul className={navSide.linksContainer}>
-            {navSideData.map((i, index) => (
-              <div className={navSide.links} key={index}>
-                <Link href={i.link}>
-                  <FontAwesomeIcon icon={i.icon} className={navSide.icon} />
+            <Link href="/">
+              <li className={navSide.links}>
+                <FontAwesomeIcon icon={faHome} />
+                <p>Anasayfa</p>
+              </li>
+            </Link>
+            <li className={navSide.linksSoru}>
+              <FontAwesomeIcon icon={faScroll} />
+              <p>Sorular</p>
+              <ul className={navSide.subMenu}>
+                <Link href="/sorular/quizelar">
+                  <li>Quzelar</li>
                 </Link>
-                <Link href={i.link}>
-                  <li>{i.name}</li>
+                <Link href="/sorular/quizeEkle">
+                  <li>QuizeEkle</li>
                 </Link>
-              </div>
-            ))}
+              </ul>
+            </li>
+            <Link href="/live">
+              <li className={navSide.links}>
+                <FontAwesomeIcon icon={faSignal} />
+                <p>Live</p>
+              </li>
+            </Link>
           </ul>
         </div>
         {/* <div className={navSide.bottomCopy}>

@@ -19,9 +19,7 @@
   border: 2px solid #101010;
   background-color: #fefedf;
   width: 50%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(62, 101, 255, 0.35) 0px 5px 15px;
 }
 .post p {
   font-size: 18px;
