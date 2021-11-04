@@ -24,7 +24,7 @@ export default function KatilanPop({ pOpen, setPOpen, persons }) {
                 </div>
                 <p className={katilan.name}>{p.name}</p>
               </div>
-              <div className={katilan.point}>
+              <div className={katilan.katilanPoint}>
                 <p>{p.point}</p>
               </div>
             </div>

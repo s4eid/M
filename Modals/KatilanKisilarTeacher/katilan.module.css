@@ -69,7 +69,7 @@
 .katilanContainer {
   width: 100%;
   display: flex;
-  margin: 10px;
+  padding: 10px;
   justify-content: space-around;
 }
 .katilanContainerName {
@@ -77,6 +77,12 @@
   position: relative;
   justify-content: space-around;
   width: 50%;
+}
+.katilanPoint {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .personContainer p {
@@ -104,7 +110,7 @@
 @media screen and (max-width: 550px) {
   .mainContainer {
     width: 80vw;
-    height: 30vh;
+    height: 40vh;
   }
   .close {
     width: 25px;
@@ -125,7 +131,7 @@
 @media screen and (max-width: 400px) {
   .mainContainer {
     width: 80vw;
-    height: 30vh;
+    height: 50vh;
   }
   .close {
     width: 20px;
