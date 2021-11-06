@@ -14,12 +14,14 @@
   justify-content: space-around;
   flex-direction: column;
   border: 2px solid #5773ff;
-  background-color: #fefedf;
+  background-color: #101010;
   width: 50%;
   box-shadow: rgba(62, 101, 255, 0.35) 0px 5px 15px;
 }
 .child p {
   font-size: 18px;
+  line-height: 30px;
+  color: white;
 }
 .icon {
   font-size: 20px;
@@ -36,6 +38,7 @@
 .trash {
   font-size: 20px;
   position: absolute;
+  color: white;
   cursor: pointer;
   top: 0;
   right: 0;
@@ -57,12 +60,12 @@
 .testBtn button {
   width: 120px;
   cursor: pointer;
-  color: white;
+  color: #101010;
   font-weight: bold;
   height: 40px;
   border: 1px solid transparent;
   border-radius: 7px;
-  background-color: #101010;
+  background-color: white;
   transition: 0.2s ease-in;
 }
 

@@ -1,6 +1,7 @@
 .mainContainer {
   margin-left: 200px;
   /* width: calc(100vw - 250px); */
+  background-color: #f1f1f1;
 }
 
 @media screen and (max-width: 900px) {

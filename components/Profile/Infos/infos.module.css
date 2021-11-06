@@ -42,7 +42,7 @@
   padding-right: 40px;
   padding-left: 40px;
   justify-content: space-between;
-  background-color: #101010;
+  /* background-color: #101010; */
   flex-direction: column;
   position: relative;
   width: 100%;
@@ -50,9 +50,8 @@
 .poan {
   width: 100%;
   display: flex;
+  padding-bottom: 40px;
   align-items: center;
-  /* background-color: #5772ff; */
-  /* height: 100%; */
   justify-content: space-around;
   flex-direction: column;
 }
@@ -61,11 +60,15 @@
   color: #5772ff;
 }
 .poan p {
+  margin: 10px;
+  font-weight: bold;
   font-size: 20px;
-  color: white;
 }
 .chart {
   width: 50%;
+  background-color: #101010;
+  border: 1px solid transparent;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 900px) {
@@ -77,6 +80,25 @@
 @media screen and (max-width: 600px) {
   .chart {
     min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .profile {
+    width: 50px;
+    height: 50px;
+  }
+  .profile p {
+    font-size: 17px;
+  }
+  .name {
+    font-size: 17px;
+  }
+  .poan p {
+    font-size: 17px;
+  }
+  .icon {
+    font-size: 30px;
   }
 }
 

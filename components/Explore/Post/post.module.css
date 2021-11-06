@@ -1,8 +1,8 @@
 .mainContainer {
-  background-color: #fefadd;
   margin-left: 200px;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: #f1f1f1;
   /* width: calc(100vw - 250px); */
 }
 
