@@ -1,4 +1,6 @@
 import { faThumbsUp, faComment } from "@fortawesome/free-solid-svg-icons";
+import "moment/locale/tr";
+import moment from "moment";
 export const postData = [
   {
     name: "Ahmet Karahanli",
@@ -8,6 +10,7 @@ export const postData = [
     comments: "55",
     iconL: faThumbsUp,
     iconC: faComment,
+    date: moment(1636186174765).fromNow(),
   },
   {
     name: "Fereydon Karahanli",
@@ -17,6 +20,7 @@ export const postData = [
     comments: "55",
     iconL: faThumbsUp,
     iconC: faComment,
+    date: moment(1636186174765).fromNow(),
   },
   {
     name: "Ahmet Karahanli",
@@ -26,6 +30,7 @@ export const postData = [
     comments: "55",
     iconL: faThumbsUp,
     iconC: faComment,
+    date: moment(1636186174765).fromNow(),
   },
   {
     name: "Ahmet Karahanli",
@@ -35,6 +40,7 @@ export const postData = [
     comments: "55",
     iconL: faThumbsUp,
     iconC: faComment,
+    date: moment(1636186174765).fromNow(),
   },
   {
     name: "Ahmet Karahanli",
@@ -44,5 +50,6 @@ export const postData = [
     comments: "55",
     iconL: faThumbsUp,
     iconC: faComment,
+    date: moment().fromNow(),
   },
 ];

@@ -1,0 +1,42 @@
+.mainContainer {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.profile {
+  border: 2px solid black;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 80px;
+  background-color: #101010;
+  color: #fefedf;
+  height: 80px;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+.profile p {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  opacity: 70%;
+}
+.personContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.poan {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}

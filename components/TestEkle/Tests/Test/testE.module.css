@@ -11,7 +11,8 @@
   position: relative;
   border: 2px solid #5772ff;
   border-radius: 10px;
-  background-color: #5772ff;
+  background-color: #fefedf;
+  /* background-color: #5772ff; */
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -33,6 +34,7 @@
   cursor: pointer;
   font-size: 20px;
   margin: 30px;
+  transition: 0.2s;
   right: 0;
   top: 0;
 }
@@ -80,9 +82,6 @@
   width: 100%;
   margin-right: 5px;
   margin-top: 10px;
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* right: 0; */
 }
 .doneContainer button {
   width: 80px;
@@ -96,6 +95,9 @@
 }
 .doneContainer button:hover {
   color: #5773ff;
+}
+.trashIcon:hover {
+  color: rgb(255, 59, 59);
 }
 @media screen and (max-width: 1100px) {
   .child {
@@ -123,5 +125,16 @@
 @media screen and (max-width: 380px) {
   .testContainer {
     padding-bottom: 70px;
+  }
+  .question {
+    width: 100%;
+  }
+  .answerContainer {
+    width: 100%;
+  }
+  .answer {
+    width: 100%;
+    margin: 0px;
+    margin-top: 5px;
   }
 }

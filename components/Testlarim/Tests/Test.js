@@ -3,13 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import tests from "./tests.module.css";
 import KatilanPop from "../../../Modals/KatilanKisilarTeacher";
-import { useRouter } from "next/router";
 import { katilanData } from "../../../Data/KatilanlarData";
+import LikePop from "../../../Modals/LikePop";
 
 export default function Test({ postData }) {
-  const [navOpen, setNavOpen] = useState(false);
-  const router = useRouter();
   const [pOpen, setPOpen] = useState(false);
+  const [pLOpen, setPLOpen] = useState(false);
   return (
     <>
       {postData.map((p, index) => (
@@ -18,16 +17,20 @@ export default function Test({ postData }) {
             <p>{p.title}</p>
             <FontAwesomeIcon icon={faTrash} className={tests.trash} />
           </div>
-          <div className={tests.likeAndComment}>
+          {/* <div className={tests.likeAndComment}>
             <div>
               <p>{p.likes}</p>
-              <FontAwesomeIcon icon={p.iconL} className={tests.icon} />
+              <FontAwesomeIcon
+                icon={p.iconL}
+                onClick={() => setPLOpen(!pLOpen)}
+                className={tests.icon}
+              />
             </div>
             <div className={tests.likeAndCommentChild}>
               <p>{p.comments}</p>
               <FontAwesomeIcon icon={p.iconC} className={tests.icon} />
             </div>
-          </div>
+          </div> */}
           <div className={tests.testBtn}>
             <button onClick={() => setPOpen(!pOpen)}>Katilan Kişilar</button>
             <button>Teste Düzenle</button>
@@ -35,6 +38,7 @@ export default function Test({ postData }) {
         </div>
       ))}
       <KatilanPop pOpen={pOpen} setPOpen={setPOpen} persons={katilanData} />
+      <LikePop pLOpen={pLOpen} setPLOpen={setPLOpen} persons={katilanData} />
     </>
   );
 }

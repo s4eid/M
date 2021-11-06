@@ -1,7 +1,7 @@
 export const heroItems = [
   {
     title: "Türkiye’nin en hesaplıözel dersleri",
-    text: "Kunduz’un en iyi öğretmenlerinden,evinizin rahatlığında, dilediğiniz dersten,online bire bir özel dersler alın.",
+    text: "en iyi öğretmenlerinden,evinizin rahatlığında, dilediğiniz dersten,online bire bir özel dersler alın.",
   },
   {
     title: "Peque porro quisquam est qui dolorem ipsut..",

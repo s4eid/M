@@ -7,8 +7,8 @@ export default function HeaderH() {
       <div className={headerH.titleContainer}>
         <h1>Türkiye’nin en hesaplı özel dersleri</h1>
         <p>
-          Kunduz’un en iyi öğretmenlerinden, evinizin rahatlığında, dilediğiniz
-          dersten, online bire bir özel dersler alın.
+          en iyi öğretmenlerinden, evinizin rahatlığında, dilediğiniz dersten,
+          online bire bir özel dersler alın.
         </p>
         {/* <button className={headerH.titleBtn}>İletişim</button> */}
       </div>

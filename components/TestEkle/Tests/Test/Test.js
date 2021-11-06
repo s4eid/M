@@ -47,25 +47,25 @@ export default function Test() {
                         <Field
                           className={testE.answer}
                           name={`quizs.${index}.answer_1`}
-                          placeholder="Jevap_1"
+                          placeholder="Cevap_1"
                           type="text"
                         />
                         <Field
                           className={testE.answer}
                           name={`quizs.${index}.answer_2`}
-                          placeholder="Jevap_2"
+                          placeholder="Cevap_2"
                           type="text"
                         />
                         <Field
                           className={testE.answer}
                           name={`quizs.${index}.answer_3`}
-                          placeholder="Jevap_3"
+                          placeholder="Cevap_3"
                           type="text"
                         />
                         <Field
                           className={testE.answer}
                           name={`quizs.${index}.answer_4`}
-                          placeholder="Jevap_4"
+                          placeholder="Cevap_4"
                           type="text"
                         />
                         {/* <ErrorMessage

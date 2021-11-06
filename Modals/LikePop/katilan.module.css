@@ -1,0 +1,149 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.mainContainer {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  left: 50%;
+  background-color: white;
+  overflow-y: scroll;
+  padding: 5px;
+  height: 300px;
+  width: 500px;
+}
+.mainContainer h1 {
+  margin: 10px;
+  font-size: 25px;
+}
+.mainContainer button {
+  background-color: #5773ff;
+  border: none;
+  color: #f9f8ff;
+  border-radius: 3px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  transition: 0.3s ease-out;
+}
+.mainContainer button:hover {
+  color: #101010;
+}
+.close {
+  position: absolute;
+  margin: 10px;
+  top: 0;
+  font-size: 30px;
+  right: 0;
+  transition: color 0.3s ease-in;
+}
+.close:hover {
+  color: red;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.personContainer {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  /* grid-template-columns: 1 1 1 1; */
+  width: 100%;
+}
+.name {
+  font-weight: bold;
+  opacity: 70%;
+}
+.katilanContainer {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #5773ff;
+  justify-content: space-around;
+}
+.katilanContainerName {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.katilanPoint {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.personContainer p {
+  margin: 16px;
+}
+.profile {
+  border: 2px solid black;
+  display: flex;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 50px;
+  background-color: #101010;
+  color: #fefedf;
+  height: 50px;
+  border-radius: 100%;
+  margin: 2px;
+}
+.profile p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 550px) {
+  .mainContainer {
+    width: 80vw;
+    height: 40vh;
+  }
+  .close {
+    width: 25px;
+    height: 25px;
+  }
+  .mainContainer h1 {
+    font-size: 20px;
+  }
+  .mainContainer button {
+    width: 75px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .profile {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainContainer {
+    width: 80vw;
+    height: 50vh;
+  }
+  .close {
+    width: 20px;
+    height: 20px;
+  }
+  .mainContainer h1 {
+    font-size: 18px;
+  }
+  .mainContainer button {
+    width: 70px;
+    height: 35px;
+    font-size: 11px;
+  }
+}
