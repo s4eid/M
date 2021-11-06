@@ -1,6 +1,4 @@
 .postMainContainer {
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -108,9 +106,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .postMainContainer {
-    margin-bottom: 100px;
-  }
   .post {
     width: 100%;
     border-top: 2px solid #101010;

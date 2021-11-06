@@ -35,8 +35,53 @@
   align-items: center;
   flex-direction: column;
 }
-.poan {
+.poanContainer {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  justify-content: space-between;
+  background-color: #101010;
+  flex-direction: column;
+  position: relative;
   width: 100%;
+}
+.poan {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: #5772ff; */
+  /* height: 100%; */
+  justify-content: space-around;
+  flex-direction: column;
+}
+.icon {
+  font-size: 40px;
+  color: #5772ff;
+}
+.poan p {
+  font-size: 20px;
+  color: white;
+}
+.chart {
+  width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .chart {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chart {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .chart {
+    min-width: 250px;
+  }
 }
