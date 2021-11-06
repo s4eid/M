@@ -18,7 +18,7 @@ export default function FormContainer() {
         <Image
           loading="eager"
           alt="logo"
-          src="/Nuzem.svg"
+          src="/Logo.svg"
           layout="intrinsic"
           width={50}
           height={50}

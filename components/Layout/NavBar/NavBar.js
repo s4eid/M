@@ -30,7 +30,7 @@ export default function NavBar({ children }) {
               alt="logo"
               loading="eager"
               className={nav.logo}
-              src="/Nuzem.svg"
+              src="/Logo.svg"
               layout="intrinsic"
               width={50}
               height={50}

@@ -10,7 +10,7 @@ export default function NavTop({ children }) {
     <>
       <div className={navTop.mainContainer}>
         <Image
-          src="/NWhite.svg"
+          src="/LogoWhite.svg"
           layout="intrinsic"
           className={navTop.logo}
           width={40}

@@ -17,14 +17,14 @@ export default function Footer({ children }) {
           <div className={footer.copyRight}>
             <Image
               loading="lazy"
-              src="/NuzemF.svg"
+              src="/Logo.svg"
               alt="logo"
               layout="intrinsic"
               width={100}
               height={100}
             />
             <div className={footer.copyText}>
-              <p>Copyright 2021 © All Rights Reserved. nuzem.com</p>
+              <p>Copyright 2021 © All Rights Reserved. M.com</p>
             </div>
           </div>
           <div className={footer.icons}>
