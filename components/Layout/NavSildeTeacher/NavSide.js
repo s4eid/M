@@ -1,6 +1,11 @@
 import React from "react";
 import navSide from "./navSide.module.css";
-import { faScroll, faSignal, faHome } from "@fortawesome/free-solid-svg-icons";
+import {
+  faScroll,
+  faSignal,
+  faHome,
+  faGraduationCap,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 export default function NavSide({ children }) {
@@ -16,12 +21,12 @@ export default function NavSide({ children }) {
           <ul className={navSide.linksContainer}>
             <Link href="/explore">
               <li className={navSide.links}>
-                <FontAwesomeIcon icon={faHome} />
+                <FontAwesomeIcon icon={faHome} className={navSide.itemIcon} />
                 <p>Anasayfa</p>
               </li>
             </Link>
             <li className={navSide.linksSoru}>
-              <FontAwesomeIcon icon={faScroll} />
+              <FontAwesomeIcon icon={faScroll} className={navSide.itemIcon} />
               <p>Test</p>
               <ul className={navSide.subMenu}>
                 <Link href="/test/testlarim">
@@ -34,8 +39,17 @@ export default function NavSide({ children }) {
             </li>
             <Link href="/live">
               <li className={navSide.links}>
-                <FontAwesomeIcon icon={faSignal} />
+                <FontAwesomeIcon icon={faSignal} className={navSide.itemIcon} />
                 <p>Live</p>
+              </li>
+            </Link>
+            <Link href="/ogrencilerim">
+              <li className={navSide.links}>
+                <FontAwesomeIcon
+                  icon={faGraduationCap}
+                  className={navSide.itemIcon}
+                />
+                <p>Oğrenci</p>
               </li>
             </Link>
           </ul>

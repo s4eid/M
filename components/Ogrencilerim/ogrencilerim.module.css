@@ -1,0 +1,17 @@
+.mainContainer {
+  margin-left: 200px;
+  background-color: #f1f1f1;
+  /* width: calc(100vw - 250px); */
+}
+
+@media screen and (max-width: 900px) {
+  .mainContainer {
+    margin-left: 98px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainContainer {
+    margin-left: 0;
+    width: 100%;
+  }
+}
