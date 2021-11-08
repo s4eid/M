@@ -1,0 +1,36 @@
+.mainContaier {
+  width: 100%;
+  position: relative;
+}
+.container {
+  position: sticky;
+  top: 0;
+  color: #5772ff;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  background-color: #101010;
+  border-bottom: 2px solid #5772ff;
+  justify-content: space-between;
+  align-items: center;
+}
+.container p {
+  cursor: pointer;
+}
+.ekle {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.name {
+  display: flex;
+  justify-content: flex-end;
+  width: 33%;
+}
+@media screen and (max-width: 550px) {
+  .container p {
+    font-size: 17px;
+  }
+}
