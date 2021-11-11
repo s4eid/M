@@ -1,0 +1,65 @@
+.mainContainer {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  padding: 10px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.pointContainer {
+  color: #5772ff;
+  text-align: center;
+  width: 33%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile {
+  border: 2px solid black;
+  width: 33%;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 50px;
+  background-color: #101010;
+  color: white;
+  height: 50px;
+  border-radius: 100%;
+  margin: 2px;
+}
+.profile p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.profile p:hover {
+  color: #5772ff;
+}
+.dateContainer {
+  width: 33%;
+  font-size: 20px;
+  text-align: center;
+  /* color: #5772ff; */
+  color: gray;
+}
+
+@media screen and (max-width: 550px) {
+  .dateContainer p {
+    font-size: 17px;
+  }
+  .pointContainer p {
+    font-size: 17px;
+  }
+  .profile p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainContainer {
+    width: 100%;
+  }
+}

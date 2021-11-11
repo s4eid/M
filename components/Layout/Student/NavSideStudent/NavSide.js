@@ -45,7 +45,7 @@ export default function NavSide({ children }) {
                 <p>Live</p>
               </li>
             </Link>
-            <Link href="/student/ogretmenler">
+            <Link href="/student/ogretmenlar">
               <li className={navSide.links}>
                 <FontAwesomeIcon
                   icon={faGraduationCap}
