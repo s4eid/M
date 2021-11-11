@@ -3,19 +3,16 @@
   position: relative;
 }
 .container {
-  position: sticky;
-  top: 0;
   color: #5772ff;
-  font-size: 18px;
   width: 100%;
   display: flex;
   background-color: #101010;
-  border-bottom: 2px solid #5772ff;
   justify-content: space-between;
   align-items: center;
 }
 .container p {
-  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 .ekle {
   display: flex;
