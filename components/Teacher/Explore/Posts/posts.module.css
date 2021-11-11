@@ -1,0 +1,137 @@
+.postMainContainer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.post {
+  padding: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 2px solid #5772ff;
+  background-color: #101010;
+  width: 50%;
+  box-shadow: rgba(62, 101, 255, 0.35) 0px 5px 15px;
+}
+.personContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.personP {
+  font-size: 18px;
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+}
+.dateContainer {
+  font-size: 14px;
+  align-items: center;
+  border-bottom: 2px solid gray;
+  padding: 4px;
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+}
+.dateContainer p {
+  margin: 0px;
+}
+.name {
+  font-weight: bold;
+  color: white;
+  opacity: 70%;
+}
+
+.personP p {
+  margin: 16px;
+}
+.profile {
+  border: 2px solid black;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 50px;
+  background-color: #fefadd;
+  color: #101010;
+  height: 50px;
+  border-radius: 100%;
+  margin: 2px;
+}
+.profile p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.titleContainer {
+  font-size: 18px;
+  line-height: 30px;
+
+  text-align: center;
+  word-wrap: break-word;
+  color: white;
+}
+.likeCommentsMainContainer {
+  display: flex;
+  font-size: 18px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.likeCommentsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.likeCommentsContainer p {
+  margin: 5px;
+  color: gray;
+  font-weight: bold;
+}
+.icon {
+  font-size: 20px;
+  color: gray;
+  margin: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1100px) {
+  .post {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .post {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .post {
+    width: 100%;
+    border-top: 2px solid #101010;
+    border-bottom: 2px solid #101010;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .titleContainer p {
+    font-size: 15px;
+  }
+  .personP {
+    font-size: 17px;
+  }
+  .likeCommentsContainer p {
+    font-size: 17px;
+  }
+  .icon {
+    font-size: 17px;
+  }
+}

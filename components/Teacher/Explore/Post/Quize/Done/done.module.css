@@ -1,0 +1,51 @@
+.mainContainer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.out {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.doneBtn {
+  width: 100px;
+  color: #f9f8ff;
+  font-weight: bold;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background-color: #101010;
+  transition: 0.2s ease-in;
+}
+
+.doneBtn:hover {
+  color: #5773ff;
+}
+.goUp {
+  font-size: 40px;
+}
+.amount {
+  color: #5773ff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .doneBtn {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .goUp {
+    font-size: 30px;
+  }
+  .amount {
+    font-size: 17px;
+  }
+  .doneBtn {
+    font-size: 12px;
+  }
+}

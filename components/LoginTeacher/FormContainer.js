@@ -28,13 +28,7 @@ export default function FormContainer() {
       <Formik
         initialValues={initialValues}
         validationSchema={loginSchema}
-        onSubmit={async (values, action) => {
-          try {
-            console.log(values);
-          } catch (error) {
-            console.log(error);
-          }
-        }}
+        onSubmit={() => route.push("/teacher/explore")}
       >
         {({ errors, touched, isValid, dirty }) => (
           <Form className={loginTeacher.fields}>
