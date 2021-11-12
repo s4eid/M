@@ -7,7 +7,7 @@ import ogretmenlarim from "./ogretmenlarim.module.css";
 export default function OgretmenlarimPage() {
   return (
     <div className={ogretmenlarim.mainContainer}>
-      <Head />
+      {/* <Head /> */}
       {katilanData.map((katilan, index) => (
         <Ogretmen data={katilan} key={index} />
       ))}
