@@ -6,17 +6,22 @@ import { LOGIN_TEACHER } from "../../graphql/Teacher/Mutation/teacherLogin";
 import Image from "next/image";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Error from "../Error/Error";
 import {
   initialValues,
   loginSchema,
 } from "../../validation/TeacherLogin/teacherLogin";
 import { useRouter } from "next/router";
+import Loading from "../Loading/Loading";
 export default function FormContainer() {
-  const [LoginTeacher, { loading, error }] = useMutation(LOGIN_TEACHER);
+  const [LoginTeacher, { loading, error }] = useMutation(LOGIN_TEACHER, {
+    onError: (err) => setErrorLogin(err.message),
+    onCompleted: () => route.push("/teacher/explore"),
+  });
+
   const [showPassword, setShowPassword] = useState(false);
+  const [errorLogin, setErrorLogin] = useState("");
   const route = useRouter();
-  console.log(error);
-  console.log(loading);
 
   return (
     <div className={loginTeacherC.container}>
@@ -34,7 +39,7 @@ export default function FormContainer() {
       <Formik
         initialValues={initialValues}
         validationSchema={loginSchema}
-        onSubmit={(data) => {
+        onSubmit={async (data) => {
           LoginTeacher({ variables: data });
         }}
       >
@@ -76,6 +81,13 @@ export default function FormContainer() {
               >
                 Giriş
               </button>
+              {loading ? (
+                <Loading />
+              ) : error ? (
+                <Error error={errorLogin} />
+              ) : (
+                <></>
+              )}
             </div>
           </Form>
         )}

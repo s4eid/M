@@ -7,3 +7,17 @@ export default function LoginTeacherP() {
     </div>
   );
 }
+
+export async function getServerSideProps({ req, res }) {
+  if (req.cookies.refresh_token) {
+    return {
+      redirect: {
+        destination: "/teacher/explore",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: {},
+  };
+}
