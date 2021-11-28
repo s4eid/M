@@ -26,5 +26,32 @@ export default function Testlarim() {
     </>
   );
 }
+
+export async function getServerSideProps({ req, res }) {
+  if (!req.cookies.refresh_token) {
+    return {
+      redirect: {
+        destination: "/loginTeacher",
+        permanent: false,
+      },
+    };
+  }
+  // const client = initializeApollo();
+  // const data = await client.query({
+  //   query: GET_TESTS_TEACHER,
+  //   context: {
+  //     headers: {
+  //       Cookie: req.headers.cookie,
+  //     },
+  //   },
+  // });
+  return {
+    props: {
+      initialApolloStatee: null,
+      //  client.cache.extract(),
+    },
+  };
+}
+
 Testlarim.NavTop = NavTop;
 Testlarim.NavSide = NavSide;

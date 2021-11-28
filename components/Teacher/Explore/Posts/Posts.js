@@ -19,14 +19,14 @@ export default function Posts({ data }) {
           <div className={posts.personContainer}>
             <div className={posts.personP}>
               <div className={posts.profile}>
-                <p>{p?.first_name.charAt(0)}</p>
+                <p>{p.first_name.charAt(0)}</p>
               </div>
               <p className={posts.name}>
-                {p?.first_name} {p?.last_name}
+                {p.first_name} {p.last_name}
               </p>
             </div>
             <div className={posts.dateContainer}>
-              <p>{moment(JSON.parse(p?.test_createdat)).fromNow()}</p>
+              <p>{moment(JSON.parse(p.test_createdat)).fromNow()}</p>
             </div>
           </div>
           <div className={posts.titleContainer}>
