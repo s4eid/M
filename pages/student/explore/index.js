@@ -11,10 +11,5 @@ export default function Explore() {
   );
 }
 
-export function getServerSideProps(context) {
-  console.log(context);
-  return { props: {} };
-}
-
 Explore.NavTopStudent = NavTop;
 Explore.NavSideStudent = NavSide;
