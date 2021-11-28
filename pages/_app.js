@@ -1,9 +1,13 @@
 import "../styles/globals.css";
 import React from "react";
 import { ApolloProvider } from "@apollo/client";
-import { useApollo } from "../apolloConfig/useApollo";
+import { go } from "../apolloConfig/apolloClient";
+// import { useApollo } from "../apolloConfig/apollo";
+import { Provider } from "react-redux";
+import { createWrapper } from "next-redux-wrapper";
+import store from "../Redux/Store/store";
 function MyApp({ Component, pageProps }) {
-  const apolloClient = useApollo(pageProps.initialApolloState);
+  // const apolloClient = useApollo(pageProps.initialApolloState);
   const Nav = Component.Nav ? Component.Nav : React.Fragment;
   const Layout = Component.Layout ? Component.Layout : React.Fragment;
   const NavTop = Component.NavTop ? Component.NavTop : React.Fragment;
@@ -15,22 +19,25 @@ function MyApp({ Component, pageProps }) {
     ? Component.NavSideStudent
     : React.Fragment;
   return (
-    <ApolloProvider client={apolloClient}>
-      <Nav>
-        <Layout>
-          <NavTop>
-            <NavSide>
-              <NavTopStudent>
-                <NavSideStudent>
-                  <Component {...pageProps} />
-                </NavSideStudent>
-              </NavTopStudent>
-            </NavSide>
-          </NavTop>
-        </Layout>
-      </Nav>
+    <ApolloProvider client={go}>
+      <Provider store={store}>
+        <Nav>
+          <Layout>
+            <NavTop>
+              <NavSide>
+                <NavTopStudent>
+                  <NavSideStudent>
+                    <Component {...pageProps} />
+                  </NavSideStudent>
+                </NavTopStudent>
+              </NavSide>
+            </NavTop>
+          </Layout>
+        </Nav>
+      </Provider>
     </ApolloProvider>
   );
 }
-
-export default MyApp;
+const makeStore = () => store;
+const wrapper = createWrapper(makeStore);
+export default wrapper.withRedux(MyApp);

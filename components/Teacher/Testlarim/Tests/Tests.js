@@ -1,11 +1,11 @@
 import React from "react";
 import tests from "./tests.module.css";
-import { postData } from "../../../../Data/PostsData";
+// import { postData } from "../../../../Data/PostsData";
 import Test from "./Test";
-export default function Tests() {
+export default function Tests({ data }) {
   return (
     <div className={tests.mainContainer}>
-      <Test postData={postData} />
+      <Test postData={data} />
     </div>
   );
 }

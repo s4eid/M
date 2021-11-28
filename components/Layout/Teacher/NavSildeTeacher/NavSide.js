@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import navSide from "./navSide.module.css";
 import {
   faScroll,
@@ -7,15 +7,25 @@ import {
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useDispatch, useSelector } from "react-redux";
+import { getUserInfo } from "../../../../Redux/Actions/User/user";
 import Link from "next/link";
 export default function NavSide({ children }) {
+  const dispatch = useDispatch();
+  const { user } = useSelector((state) => state);
+  useEffect(() => {
+    dispatch(getUserInfo());
+  }, []);
+  const email = user?.email;
+  const letter = email?.charAt(0);
+
   return (
     <>
       <div className={navSide.mainContainer}>
         <div className={navSide.nav}>
           <div className={navSide.logo}>
             <div className={navSide.profile}>
-              <p>S</p>
+              <p>{letter}</p>
             </div>
           </div>
           <ul className={navSide.linksContainer}>

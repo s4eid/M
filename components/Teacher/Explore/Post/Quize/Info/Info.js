@@ -6,7 +6,7 @@ export default function Info({ creator, quize }) {
     <div className={info.mainContainer}>
       <div className={info.profileContainer}>
         <div className={info.profile}>
-          <p>{creator.charAt(0)}</p>
+          <p>{creator?.charAt(0)}</p>
         </div>
         <p className={info.name}>{creator}</p>
       </div>

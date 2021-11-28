@@ -10,7 +10,7 @@ export default function Posts({ data }) {
   const router = useRouter();
   return (
     <div className={posts.postMainContainer}>
-      {data.map((p, index) => (
+      {data?.map((p, index) => (
         <div
           className={posts.post}
           key={index}

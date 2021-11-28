@@ -2,15 +2,24 @@ import React from "react";
 import ExplorePage from "../../../components/Teacher/Explore/ExplorePage";
 import NavSide from "../../../components/Layout/Teacher/NavSildeTeacher/NavSide";
 import NavTop from "../../../components/Layout/Teacher/NavTop/NavTop";
+import Loading from "../../../components/Loading/Loading";
 import { initializeApollo } from "../../../apolloConfig/apollo";
-import { GET_TEST_TEACHER } from "../../../graphql/Teacher/Query/getTest";
+import { GET_TESTS_TEACHER } from "../../../graphql/Teacher/Query/getTests";
 import { useQuery } from "@apollo/client";
 
 export default function Explore() {
-  const { data } = useQuery(GET_TEST_TEACHER);
+  const { data, loading, error } = useQuery(GET_TESTS_TEACHER);
   return (
     <>
-      <ExplorePage data={data.tests} />
+      {loading ? (
+        <Loading />
+      ) : data ? (
+        <ExplorePage data={data.tests} />
+      ) : error ? (
+        <h1>...</h1>
+      ) : (
+        <></>
+      )}
     </>
   );
 }
@@ -23,10 +32,20 @@ export async function getServerSideProps({ req, res }) {
       },
     };
   }
-  const client = initializeApollo();
-  await client.query({ query: GET_TEST_TEACHER });
+  // const client = initializeApollo();
+  // const data = await client.query({
+  //   query: GET_TESTS_TEACHER,
+  //   context: {
+  //     headers: {
+  //       Cookie: req.headers.cookie,
+  //     },
+  //   },
+  // });
   return {
-    props: { initialApolloState: client.cache.extract() },
+    props: {
+      initialApolloStatee: null,
+      //  client.cache.extract(),
+    },
   };
 }
 

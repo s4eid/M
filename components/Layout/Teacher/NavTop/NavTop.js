@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function NavTop({ children }) {
   const route = useRouter();
-  const path = route.asPath;
+  const path = route.route;
   return (
     <>
       <div className={navTop.mainContainer}>
