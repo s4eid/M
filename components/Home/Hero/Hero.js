@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { heroItems } from "../../../Data/HeroItems";
 import hero from "./hero.module.css";
 import Image from "next/image";
-import NavBar from "../../Layout/NavBar/NavBar";
 export default function Hero() {
   const [current, setCurrent] = useState(0);
   const length = heroItems.length;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import quizeC from "../quize.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Question({ q, id }) {
   const id_0 = JSON.stringify(id);
