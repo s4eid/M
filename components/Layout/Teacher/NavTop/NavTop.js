@@ -2,6 +2,7 @@ import React from "react";
 import navTop from "./navTop.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Cookies from "js-cookie";
 
 export default function NavTop({ children }) {
   const route = useRouter();
@@ -17,7 +18,20 @@ export default function NavTop({ children }) {
           height={40}
         />
         <h1>{path}</h1>
-        <button className={navTop.navBtn}>Çik</button>
+        <button
+          className={navTop.navBtn}
+          onClick={async () => {
+            try {
+              Cookies.remove("refresh_token");
+              Cookies.remove("access_token");
+              route.push("/loginTeacher");
+            } catch (error) {
+              console.log("ooops");
+            }
+          }}
+        >
+          Çik
+        </button>
       </div>
       {children}
     </>

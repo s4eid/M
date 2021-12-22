@@ -4,16 +4,26 @@ import { initialValues } from "../../../../../Forms/TestEk";
 import { Formik, Field, Form, ErrorMessage, FieldArray } from "formik";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { sendPhoto } from "../../../../../Fetch/Teacher/sendPhoto";
 export default function Test() {
   return (
     <Formik
       initialValues={initialValues}
       onSubmit={async (values) => {
-        await new Promise((r) => setTimeout(r, 500));
-        alert(JSON.stringify(values, null, 2));
+        try {
+          console.log(values);
+          const images = await sendPhoto(values.quizs);
+          for (let i = 0; i < images.length; i++) {
+            values.quizs[i].image = images[i];
+          }
+          console.log(values);
+        } catch (error) {
+          console.log(error);
+        }
+        // alert(JSON.stringify(values, null, 2));
       }}
     >
-      {({ values }) => (
+      {({ values, setFieldValue }) => (
         <Form className={testE.testContainer}>
           <FieldArray name="quizs">
             {({ insert, remove, push }) => (
@@ -40,7 +50,17 @@ export default function Test() {
                         /> */}
                       </div>
                       <div>
-                        <Field type="file" name="file" />
+                        {/* {console.log(values)} */}
+                        <input
+                          type="file"
+                          name={`quizs.${index}.image`}
+                          onChange={(e) =>
+                            setFieldValue(
+                              `quizs.${index}.image`,
+                              e.target.files[0]
+                            )
+                          }
+                        />
                       </div>
                       <div className={testE.answerContainer}>
                         {/* <label htmlFor={`friends.${index}.email`}>Email</label> */}
@@ -89,6 +109,7 @@ export default function Test() {
                         answer_2: "",
                         answer_3: "",
                         answer_4: "",
+                        image: "",
                       })
                     }
                     className={testE.icon}

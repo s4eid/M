@@ -5,8 +5,8 @@ import loading from "./loading.module.css";
 export default function Loading() {
   return (
     <div className={loading.mainContainer}>
-      {/* <Image src="/logo.svg" layout="fixed" width={32} height={75} /> */}
-      <p>Loading...</p>
+      <Image src="/logo.svg" layout="fixed" width={32} height={75} />
+      {/* <p>Loading...</p> */}
     </div>
   );
 }
