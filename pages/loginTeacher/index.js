@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LoginTeacher from "../../components/LoginTeacher/LoginTeacher";
 export default function LoginTeacherP() {
+  useEffect(() => {
+    console.log(document.cookie);
+  }, []);
+
   return (
     <div>
       <LoginTeacher />
@@ -9,6 +13,7 @@ export default function LoginTeacherP() {
 }
 
 export async function getServerSideProps({ req, res }) {
+  console.log(req.cookies);
   if (req.cookies.refresh_token) {
     return {
       redirect: {

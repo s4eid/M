@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ExplorePage from "../../../components/Teacher/Explore/ExplorePage";
 import NavSide from "../../../components/Layout/Teacher/NavSildeTeacher/NavSide";
 import NavTop from "../../../components/Layout/Teacher/NavTop/NavTop";
@@ -8,7 +8,11 @@ import { GET_TESTS_TEACHER } from "../../../graphql/Teacher/Query/getTests";
 import { useQuery } from "@apollo/client";
 
 export default function Explore() {
+  useEffect(() => {
+    console.log(document.cookie);
+  }, []);
   const { data, loading, error } = useQuery(GET_TESTS_TEACHER);
+
   return (
     <>
       {loading ? (
