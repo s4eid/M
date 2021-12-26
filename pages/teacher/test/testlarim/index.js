@@ -8,6 +8,7 @@ import { GET_TEACHER_TESTS } from "../../../../graphql/Teacher/Query/getTeacherT
 import { useSelector } from "react-redux";
 export default function Testlarim() {
   const { user } = useSelector((state) => state);
+  console.log(user);
   const { data, loading, error } = useQuery(GET_TEACHER_TESTS, {
     variables: { teacher_id: user.id },
     skip: !user.id,
