@@ -6,6 +6,7 @@ import { LOGIN_TEACHER } from "../../graphql/Teacher/Mutation/teacherLogin";
 import Image from "next/image";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Cookies from "js-cookie";
 import Error from "../Error/Error";
 import {
   initialValues,
@@ -14,9 +15,14 @@ import {
 import { useRouter } from "next/router";
 import Loading from "../Loading/Loading";
 export default function FormContainer() {
-  const [LoginTeacher, { loading, error }] = useMutation(LOGIN_TEACHER, {
+  const [LoginTeacher, { loading, error, data }] = useMutation(LOGIN_TEACHER, {
     onError: (err) => setErrorLogin(err.message),
-    onCompleted: () => route.push("/teacher/explore"),
+    onCompleted: (data) => {
+      Cookies.set("refresh", data.loginTeacher.refreshToken, {
+        expires: 1,
+      });
+      route.push("/teacher/explore");
+    },
   });
 
   const [showPassword, setShowPassword] = useState(false);

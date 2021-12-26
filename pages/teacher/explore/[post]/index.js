@@ -27,7 +27,7 @@ export default function Post() {
   );
 }
 export async function getServerSideProps({ req, res }) {
-  if (!req.cookies.refresh_token) {
+  if (!req.cookies.refresh) {
     return {
       redirect: {
         destination: "/loginTeacher",

@@ -22,6 +22,7 @@ export default function NavTop({ children }) {
           className={navTop.navBtn}
           onClick={async () => {
             try {
+              Cookies.remove("refresh");
               Cookies.remove("refresh_token");
               Cookies.remove("access_token");
               route.push("/loginTeacher");

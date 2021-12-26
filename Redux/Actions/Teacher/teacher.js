@@ -3,7 +3,7 @@ import { getUser } from "../../../Functions/getUser";
 
 export const getTeacherInfo = () => async (dispatch) => {
   try {
-    const user = await getUser("refresh_token");
+    const user = await getUser("refresh");
     dispatch({ type: TEACHER_TYPE.TEACHER_INFO_TYPE, payload: user });
   } catch (error) {
     console.log(error);

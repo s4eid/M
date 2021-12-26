@@ -8,9 +8,6 @@ import { GET_TESTS_TEACHER } from "../../../graphql/Teacher/Query/getTests";
 import { useQuery } from "@apollo/client";
 
 export default function Explore() {
-  useEffect(() => {
-    console.log(document.cookie);
-  }, []);
   const { data, loading, error } = useQuery(GET_TESTS_TEACHER);
 
   return (
@@ -28,7 +25,7 @@ export default function Explore() {
   );
 }
 export async function getServerSideProps({ req, res }) {
-  if (!req.cookies.refresh_token) {
+  if (!req.cookies.refresh) {
     return {
       redirect: {
         destination: "/loginTeacher",
