@@ -20,6 +20,7 @@ export default function FormContainer() {
     onCompleted: (data) => {
       Cookies.set("refresh", data.loginTeacher.refreshToken, {
         expires: 1,
+        secure: process.env.NODE_ENV === "production",
       });
       route.push("/teacher/explore");
     },
