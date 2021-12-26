@@ -3,6 +3,7 @@ import LoginTeacher from "../../components/LoginTeacher/LoginTeacher";
 export default function LoginTeacherP() {
   useEffect(() => {
     console.log(document.cookie);
+    document.cookie = "testagain=me faf";
   }, []);
 
   return (
