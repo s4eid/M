@@ -1,0 +1,142 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.mainContainer {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  left: 50%;
+  background-color: white;
+  /* overflow-y: scroll; */
+  padding: 5px;
+  height: 300px;
+  width: 500px;
+}
+.mainContainer h1 {
+  margin: 10px;
+  font-size: 25px;
+}
+.mainContainer button {
+  background-color: #5773ff;
+  border: none;
+  color: #f9f8ff;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  transition: 0.3s ease-out;
+}
+.mainContainer button:hover {
+  color: #101010;
+}
+.confrimContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.titleForm {
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+}
+.close {
+  position: absolute;
+  margin: 10px;
+  top: 0;
+  font-size: 30px;
+  right: 0;
+  transition: color 0.3s ease-in;
+}
+.close:hover {
+  color: red;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.name {
+  font-weight: bold;
+  opacity: 70%;
+}
+.quizeContainer {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #5773ff;
+  justify-content: space-around;
+}
+.quizeContainerName {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.personContainer p {
+  margin: 16px;
+}
+@media screen and (max-width: 550px) {
+  .mainContainer {
+    width: 80vw;
+    height: 40vh;
+  }
+  .close {
+    width: 25px;
+    height: 25px;
+  }
+  .mainContainer h1 {
+    font-size: 20px;
+  }
+  .mainContainer button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainContainer {
+    width: 80vw;
+    height: 40vh;
+  }
+  .close {
+    width: 20px;
+    height: 20px;
+  }
+  .mainContainer h1 {
+    font-size: 18px;
+  }
+  .mainContainer button {
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
+  }
+}

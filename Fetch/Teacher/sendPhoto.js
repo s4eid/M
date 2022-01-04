@@ -1,11 +1,12 @@
 import axios from "axios";
 
-export const sendPhoto = async (quize) => {
+export const sendPhoto = async (finalValues) => {
+  console.log(finalValues);
   let images = [];
   try {
-    for (let i = 0; i < quize.length; i++) {
+    for (let i = 0; i < finalValues.length; i++) {
       const formData = new FormData();
-      formData.append("file", quize[i].image);
+      formData.append("file", finalValues[i].image);
       formData.append("upload_preset", "oipp5ox6");
       const data = await axios.post(
         "https://api.cloudinary.com/v1_1/nuzem/image/upload",

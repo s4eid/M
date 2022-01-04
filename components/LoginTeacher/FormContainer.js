@@ -11,7 +11,7 @@ import Error from "../Error/Error";
 import {
   initialValues,
   loginSchema,
-} from "../../validation/TeacherLogin/teacherLogin";
+} from "../../validation/Teacher/teacherLogin";
 import { useRouter } from "next/router";
 import Loading from "../Loading/Loading";
 export default function FormContainer() {
@@ -21,7 +21,7 @@ export default function FormContainer() {
       Cookies.set("refresh", data.loginTeacher.refreshToken, {
         expires: 1,
         secure: process.env.NODE_ENV === "production",
-        sameSite: "none",
+        // sameSite: "none",
       });
       route.push("/teacher/explore");
     },
