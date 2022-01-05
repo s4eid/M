@@ -1,7 +1,7 @@
 import * as Yup from "yup";
 
 export const addTestSchema = Yup.object().shape({
-  soru: Yup.string()
+  q: Yup.string()
     .max(400, "Fazla Karekter")
     //     .min(6, "Too Short!")
     //     .max(30, "Too Long!")

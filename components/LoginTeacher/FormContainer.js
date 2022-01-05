@@ -21,7 +21,7 @@ export default function FormContainer() {
       Cookies.set("refresh", data.loginTeacher.refreshToken, {
         expires: 1,
         secure: process.env.NODE_ENV === "production",
-        // sameSite: "none",
+        sameSite: "lax",
       });
       route.push("/teacher/explore");
     },
