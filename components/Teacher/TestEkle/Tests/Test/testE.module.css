@@ -67,15 +67,13 @@
   color: #5772ff;
   border: 1px solid #5772ff;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   cursor: pointer;
   align-items: center;
   width: 100%;
   text-align: center;
   font-weight: 600;
   border-radius: 10px;
-  /* font-size: 30px; */
-  /* display: none; */
 }
 .choseFileIcon {
   font-size: 30px;
@@ -94,6 +92,7 @@
 .answerKey {
   background-color: #fff;
   outline: none;
+  margin: 10px;
   border: 4px solid #8aff8e;
   text-align: center;
   font-size: 16px;
@@ -101,6 +100,9 @@
 }
 .answerKey option :hover {
   font-weight: bold;
+}
+.errors {
+  color: red;
 }
 .doneContainer {
   display: flex;

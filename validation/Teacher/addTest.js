@@ -1,17 +1,28 @@
-import * as Yup from "yup";
+import { object, array, string } from "yup";
 
-export const addTestSchema = Yup.object().shape({
-  q: Yup.string()
-    .max(400, "Fazla Karekter")
-    //     .min(6, "Too Short!")
-    //     .max(30, "Too Long!")
-    .required("Gerekli Bilgi"),
-  a: Yup.string().max(400, "Fazla Karekter!").required("Gerekli Bilgi"),
-  b: Yup.string().max(400, "Fazla Karekter!").required("Gerekli Bilgi"),
-
-  c: Yup.string().max(400, "Fazla Karekter!").required("Gerekli Bilgi"),
-
-  d: Yup.string().max(400, "Fazla Karekter!").required("Gerekli Bilgi"),
-
-  answerKey: Yup.string().required("Gerekli Bilgi"),
+export const addTestSchema = object().shape({
+  quizs: array()
+    .of(
+      object().shape({
+        q: string()
+          .max(400, "Fazla Karekter!")
+          .ensure()
+          .required("Gerekli Bilgi!"),
+        a: string().max(400, "Fazla Karekter!").required("Gerekli Bilgi!"),
+        b: string()
+          .max(400, "Fazla Karekter!")
+          .ensure()
+          .required("Gerekli Bilgi!"),
+        c: string()
+          .max(400, "Fazla Karekter!")
+          .ensure()
+          .required("Gerekli Bilgi!"),
+        d: string()
+          .max(400, "Fazla Karekter!")
+          .ensure()
+          .required("Gerekli Bilgi!"),
+      })
+    )
+    .min(3, "En Az 3 Soru Yuklemeniz Lazem!")
+    .required("Lütfen Bilgilere Girin!"),
 });

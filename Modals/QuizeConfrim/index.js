@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 
 export default function QuizeConfrim({ pOpen, setPOpen, finalValues }) {
   if (pOpen === null) return null;
+  console.log(finalValues);
   const { user } = useSelector((store) => store);
   const router = useRouter();
   const [AddTest, { data, loading, error }] = useMutation(ADD_TEST);
