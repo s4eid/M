@@ -60,7 +60,23 @@
   height: 35px;
   font-size: 20px;
 }
+
 .field::placeholder {
+  text-align: center;
+}
+
+.fieldE {
+  width: 100%;
+  outline: none;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 35px;
+  font-size: 20px;
+  text-transform: lowercase;
+}
+
+.fieldE::placeholder {
   text-align: center;
 }
 

@@ -9,7 +9,6 @@ import { useQuery } from "@apollo/client";
 
 export default function Explore() {
   const { data, loading, error } = useQuery(GET_TESTS_TEACHER);
-  console.log(data);
   return (
     <>
       {loading ? (

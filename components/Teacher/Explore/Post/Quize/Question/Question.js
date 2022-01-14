@@ -7,9 +7,7 @@ export default function Question({ q, id }) {
   const id_1 = JSON.stringify(`${id}1`);
   const id_2 = JSON.stringify(`${id}2`);
   const id_3 = JSON.stringify(`${id}3`);
-  console.log(q);
   const [answer, setAnswer] = useState();
-  console.log(q);
   return (
     <div className={quizeC.question}>
       <div className={quizeC.qQuestion}>
