@@ -22,6 +22,7 @@ import Cookies from "js-cookie";
 export const getUser = async (name) => {
   // const cookie = await getCookie(name);
   const cookie = Cookies.get(name);
+  console.log(`here i can reaid ${cookie}`);
   const data = await JSON.stringify(cookie);
   const user = await jwt_decode(data);
   return user;
