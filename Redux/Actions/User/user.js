@@ -4,7 +4,6 @@ import { getUser } from "../../../Functions/getUser";
 export const getUserInfo = () => async (dispatch) => {
   try {
     const user = await getUser("refresh");
-    console.log(user);
     dispatch({ type: USER_TYPE.USER_INFO_TYPE, payload: user });
   } catch (error) {
     console.log(error);
