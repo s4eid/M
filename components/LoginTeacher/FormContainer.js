@@ -48,8 +48,9 @@ export default function FormContainer() {
         initialValues={initialValues}
         validationSchema={loginSchema}
         onSubmit={async (data) => {
-          const final = data.email.toLowerCase();
-          LoginTeacher({ variables: final });
+          data.email = await data.email.toLowerCase();
+
+          LoginTeacher({ variables: data });
         }}
       >
         {({ errors, touched, isValid, dirty }) => (
