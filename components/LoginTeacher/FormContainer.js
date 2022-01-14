@@ -48,13 +48,14 @@ export default function FormContainer() {
         initialValues={initialValues}
         validationSchema={loginSchema}
         onSubmit={async (data) => {
-          LoginTeacher({ variables: data });
+          const final = data.email.toLowerCase();
+          LoginTeacher({ variables: final });
         }}
       >
         {({ errors, touched, isValid, dirty }) => (
           <Form className={loginTeacherC.fields}>
             <Field
-              type="text"
+              type="email"
               name="email"
               placeholder="Email"
               // autoComplete="off"
