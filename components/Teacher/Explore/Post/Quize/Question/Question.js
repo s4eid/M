@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import quizeC from "../quize.module.css";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function Question({ q, id }) {
   const id_0 = JSON.stringify(id);
@@ -9,13 +9,16 @@ export default function Question({ q, id }) {
   const id_3 = JSON.stringify(`${id}3`);
   console.log(q);
   const [answer, setAnswer] = useState();
+  console.log(q);
   return (
     <div className={quizeC.question}>
       <div className={quizeC.qQuestion}>
         <p>{q.q}</p>
       </div>
       <div className={quizeC.qImage}>
-        {/* <Image src={q.image} layout="fixed" width={100} height={100} /> */}
+        {q.image && (
+          <Image src={q.image} layout="fixed" width={100} height={100} />
+        )}
       </div>
       <div className={quizeC.answersContainer}>
         <input

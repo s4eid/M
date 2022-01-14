@@ -14,6 +14,7 @@ export default function NavTop({ children }) {
           src="/LogoWhite.svg"
           layout="intrinsic"
           className={navTop.logo}
+          onClick={() => route.push("/teacher/explore")}
           width={40}
           height={40}
         />

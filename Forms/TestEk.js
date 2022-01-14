@@ -1,7 +1,6 @@
 export const initialValues = {
   quizs: [
     {
-      // id:
       answerKey: "",
       image: "",
       q: "",

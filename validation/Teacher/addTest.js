@@ -21,6 +21,7 @@ export const addTestSchema = object().shape({
           .max(400, "Fazla Karekter!")
           .ensure()
           .required("Gerekli Bilgi!"),
+        answerKey: string().required("Gerekli Bilgi!"),
       })
     )
     .min(3, "En Az 3 Soru Yuklemeniz Lazem!")

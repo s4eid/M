@@ -12,6 +12,7 @@ export const GET_TEST_TEACHER = gql`
         c
         d
         # answerKey
+        image
       }
       #       test_createdat
       #     creator

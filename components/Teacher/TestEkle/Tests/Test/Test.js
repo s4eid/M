@@ -26,6 +26,7 @@ export default function Test() {
       >
         {({ values, setFieldValue, errors, touched, dirty, isValid }) => (
           <Form className={testE.testContainer}>
+            {console.log(values)}
             <FieldArray name="quizs">
               {({ insert, remove, push }) => (
                 <>
@@ -110,14 +111,23 @@ export default function Test() {
                           />
                           <Field
                             as="select"
+                            // value="a"
                             className={testE.answerKey}
                             name={`quizs.${index}.answerKey`}
                           >
+                            <option value="" selected disabled hidden>
+                              Cevap Seçin
+                            </option>
                             <option value="a">a</option>
                             <option value="b">b</option>
                             <option value="c">c</option>
                             <option value="d">d</option>
                           </Field>
+                          <ErrorMessage
+                            name={`quizs.${index}.answerKey`}
+                            component="div"
+                            className={testE.errors}
+                          />
                           {typeof errors.quizs == "string" ? (
                             <p className={testE.errors}>{errors?.quizs}</p>
                           ) : (

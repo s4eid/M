@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ExplorePage from "../../../components/Teacher/Explore/ExplorePage";
 import NavSide from "../../../components/Layout/Teacher/NavSildeTeacher/NavSide";
 import NavTop from "../../../components/Layout/Teacher/NavTop/NavTop";
 import Loading from "../../../components/Loading/Loading";
-import { initializeApollo } from "../../../apolloConfig/apollo";
+// import { initializeApollo } from "../../../apolloConfig/apollo";
 import { GET_TESTS_TEACHER } from "../../../graphql/Teacher/Query/getTests";
 import { useQuery } from "@apollo/client";
 
